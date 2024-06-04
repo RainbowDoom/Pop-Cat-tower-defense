@@ -125,7 +125,12 @@ Section:NewTextBox("EventValue", "Visual function", function(txt)
 	game.Players.LocalPlayer.leaderstats.EventValue.Value = txt
 end)
 
+local Section = Tab:NewSection("Chams")
 
+-- Переключатель
+Section:NewTextBox("Chams", "Visual function", function(txt)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Chams/main/Chams"))()
+end)
 --
 
 
