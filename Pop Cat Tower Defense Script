@@ -127,7 +127,6 @@ end)
 
 local Section = Tab:NewSection("Chams")
 
--- Переключатель
 Section:NewTextBox("Chams", "Visual function", function(txt)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Chams/main/Chams"))()
 end)
@@ -136,4 +135,18 @@ end)
 
 local Tab = Window:NewTab("Social network")
 
-local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
+		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
+
+
+local Tab = Window:NewTab("In fame functions")
+
+local Section = Tab:NewSection("functions")
+
+Section:NewButton("units 0 $", "its work in game, not lobby", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Giver0/main/0giver"))()
+
+end)
+
+
+
