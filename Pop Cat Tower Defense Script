@@ -36,6 +36,10 @@ game.Players.PlayerAdded:connect(function(player)
 end)
 end)
 
+Section:NewButton("Idk what this", "Teleport", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-350.815369, 2.99999928, -11.9251842, -0.129977837, -9.5801326e-08, -0.991516888, 1.37855558e-08, 1, -9.84281172e-08, 0.991516888, -2.64620859e-08, -0.129977837)
+end)
+
 --
 
 Section:NewButton("Teleport To Endless", "Teleport", function()
