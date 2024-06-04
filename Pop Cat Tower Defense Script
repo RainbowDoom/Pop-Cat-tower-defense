@@ -102,6 +102,30 @@ Section:NewButton("Fly", "Fly", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
 
+Section:NewButton("Noclip", "Noclip", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Noclip/main/Noclip"))()
+end)
+
+
+--
+
+local Tab = Window:NewTab("Visual")
+
+local Section = Tab:NewSection("Visual functions (ONLY FOR YOU!)")
+
+Section:NewTextBox("Wins", "Visual function", function(txt)
+	game.Players.LocalPlayer.leaderstats.Wins.Value = txt
+end)
+
+Section:NewTextBox("Cash", "Visual function", function(txt)
+	game.Players.LocalPlayer.leaderstats.Cash.Value = txt
+end)
+
+Section:NewTextBox("EventValue", "Visual function", function(txt)
+	game.Players.LocalPlayer.leaderstats.EventValue.Value = txt
+end)
+
+
 --
 
 
