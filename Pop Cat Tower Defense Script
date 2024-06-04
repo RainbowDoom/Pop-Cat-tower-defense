@@ -1,0 +1,99 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+--[[ 
+В данный момент стоит тема "RJTheme3" ,
+вы можете использовать другую тему приведённую ниже -
+"RJTheme1"
+"RJTheme2"
+"RJTheme3"
+"RJTheme4"
+"RJTheme5"
+"RJTheme6"
+"RJTheme7"
+"RJTheme8"
+]]
+--[[
+local colors = {
+	-- Цвет фона у Секций
+    SchemeColor = Color3.fromRGB(150, 72, 148),
+	-- Цвет фона в правой части UI
+	Background = Color3.fromRGB(15,15,15),
+	-- Цвет фона в левой части UI
+    Header = Color3.fromRGB(15,15,15),
+	-- Цвет текста
+    TextColor = Color3.fromRGB(255,255,255),
+	-- Цвет фона у кнопок
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+]]
+-- Создать окно UI
+local Window = Library.CreateLib("By : rgbdoom (my discord)", "RJTheme1")
+
+-- Секция
+local Tab = Window:NewTab("Teleports")
+
+-- Подсекция
+local Section = Tab:NewSection("Teleports")
+
+-- Кнопка
+Section:NewButton("Teleport To Winter Street", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17416074811 -- Change "0" to the place ID
+
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+--
+
+Section:NewButton("Teleport To Endless", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17415686139 -- Change "0" to the place ID
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+--
+
+Section:NewButton("Teleport To Hardcore", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17397865665 -- Change "0" to the place ID
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+Section:NewButton("Teleport To Fight Club", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17500542475 -- Change "0" to the place ID
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+--
+
+local Tab = Window:NewTab("Destroy")
+
+local Section = Tab:NewSection("Destroy Doors")
+
+Section:NewButton("Destroy doors", "Teleport", function()
+  game.workspace.Doors.ProxodSnowStreetMODE:Destroy()
+  game.workspace.Doors.ProxodVEVENT:Destroy()
+  game.workspace.Doors.ProxodVHARDMODE:Destroy()
+  game.workspace.Doors.ProxodVNUCLEARMODE:Destroy()
+  game.workspace.Doors.ProxodVendMODE:Destroy()
+end)
