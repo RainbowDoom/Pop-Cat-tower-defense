@@ -21,7 +21,7 @@ local Window = Library.CreateLib("By : rgbdoom (my discord)", "RJTheme1")
 local Tab = Window:NewTab("Teleports")
 
 
-local Section = Tab:NewSection("Teleports")
+local Section = Tab:NewSection("Teleports (need some time)")
 
 
 Section:NewButton("Teleport To Winter Street", "Teleport", function()
@@ -86,3 +86,21 @@ Section:NewButton("Destroy doors", "Teleport", function()
   game.workspace.Doors.ProxodVNUCLEARMODE:Destroy()
   game.workspace.Doors.ProxodVendMODE:Destroy()
 end)
+
+--
+
+local Tab = Window:NewTab("Universal")
+
+local Section = Tab:NewSection("Universal functions")
+
+Section:NewButton("Fly", "Fly", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+--
+
+
+local Tab = Window:NewTab("Social network")
+
+local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
