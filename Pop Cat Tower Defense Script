@@ -132,10 +132,18 @@ local Section = Tab:NewSection("ESP")
 Section:NewTextBox("Chams", "Visual function", function(txt)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Chams/main/Chams"))()
 end)
+
 --
 
 
-local Tab = Window:NewTab("In fame functions")
+local Tab = Window:NewTab("Social network")
+
+		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
+
+
+if game.PlaceId == 17393675736 then
+
+local Tab = Window:NewTab("In game functions")
 
 local Section = Tab:NewSection("functions")
 
@@ -144,10 +152,3 @@ Section:NewButton("units 0 $", "its work in game, not lobby", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Giver0/main/0giver"))()
 
 end)
-
---
-
-
-local Tab = Window:NewTab("Social network")
-
-		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
