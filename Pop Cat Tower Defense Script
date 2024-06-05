@@ -143,6 +143,25 @@ local Tab = Window:NewTab("Social network")
 
 if game.PlaceId == 17393675736 then
 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+--[[
+local colors = {
+	
+    SchemeColor = Color3.fromRGB(150, 72, 148),
+	
+	Background = Color3.fromRGB(15,15,15),
+	
+    Header = Color3.fromRGB(15,15,15),
+	
+    TextColor = Color3.fromRGB(255,255,255),
+
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+]]
+
+local Window = Library.CreateLib("RainHub", "RJTheme1")
+
 local Tab = Window:NewTab("In game functions")
 
 local Section = Tab:NewSection("functions")
@@ -151,4 +170,8 @@ Section:NewButton("units 0 $", "its work in game, not lobby", function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Giver0/main/0giver"))()
 
+end)
+
+Section:NewButton("Destroy path", "You can place on path", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/DestroyPath1/main/Path1Destroy?token=GHSAT0AAAAAACTF32RYF65B5I3HOFASATNIZTAFRBQ"))()
 end)
