@@ -133,11 +133,6 @@ end)
 --
 
 
-local Tab = Window:NewTab("Social network")
-
-		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
-
-
 local Tab = Window:NewTab("In fame functions")
 
 local Section = Tab:NewSection("functions")
@@ -148,5 +143,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Giver0/ma
 
 end)
 
+--
+
+
+local Tab = Window:NewTab("Social network")
+
+		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
 
 
