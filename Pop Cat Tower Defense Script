@@ -1,5 +1,3 @@
-if game.PlaceId == 17069479061 then 
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
 --[[
@@ -17,7 +15,7 @@ local colors = {
 }
 ]]
 
-local Window = Library.CreateLib("By : rgbdoom (my discord)", "RJTheme1")
+local Window = Library.CreateLib("Rain Hub", "RJTheme8")
 
 
 local Tab = Window:NewTab("Teleports")
@@ -135,33 +133,6 @@ end)
 
 --
 
-
-local Tab = Window:NewTab("Social network")
-
-		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
-
-
-if game.PlaceId == 17393675736 then
-
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
-
---[[
-local colors = {
-	
-    SchemeColor = Color3.fromRGB(150, 72, 148),
-	
-	Background = Color3.fromRGB(15,15,15),
-	
-    Header = Color3.fromRGB(15,15,15),
-	
-    TextColor = Color3.fromRGB(255,255,255),
-
-    ElementColor = Color3.fromRGB(20, 20, 20)
-}
-]]
-
-local Window = Library.CreateLib("RainHub", "RJTheme1")
-
 local Tab = Window:NewTab("In game functions")
 
 local Section = Tab:NewSection("functions")
@@ -175,3 +146,10 @@ end)
 Section:NewButton("Destroy path", "You can place on path", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/DestroyPath1/main/Path1Destroy?token=GHSAT0AAAAAACTF32RYF65B5I3HOFASATNIZTAFRBQ"))()
 end)
+
+--
+
+
+local Tab = Window:NewTab("Social network")
+
+		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
