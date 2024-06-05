@@ -144,7 +144,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Giver0/ma
 end)
 
 Section:NewButton("Destroy path", "You can place on path", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/DestroyPath1/main/Path1Destroy?token=GHSAT0AAAAAACTF32RYF65B5I3HOFASATNIZTAFRBQ"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/DestroyPath1/main/Path1Destroy?token=GHSAT0AAAAAACTF32RZOUTDGKFANBO2TOWSZTARIEQ"))()
 end)
 
 --
