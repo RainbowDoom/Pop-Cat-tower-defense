@@ -149,5 +149,3 @@ end)
 local Tab = Window:NewTab("Social network")
 
 		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
-
-
